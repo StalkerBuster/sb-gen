@@ -1,6 +1,9 @@
-# pi-gen
+# sb-gen
 
-_Tool used to create the raspberrypi.org Raspbian images_
+_Tool used to create the StalkerBuster raspberrypi images_
+
+This tool is a modified fork from the default Raspbian image as created by
+@RPi-Distro/pi-gen.
 
 
 ## Dependencies
