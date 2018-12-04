@@ -5,6 +5,10 @@ _Tool used to create the StalkerBuster raspberrypi images_
 This tool is a modified fork from the default Raspbian image as created by
 @RPi-Distro/pi-gen.
 
+The following text is the unchanged upstream document. See `CHANGES.md` for all
+differences between the upstream ``pi-gen`` tool and ``sb-gen``, the
+StalkerBuster image generator.
+
 
 ## Dependencies
 
