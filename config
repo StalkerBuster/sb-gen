@@ -1,1 +1,2 @@
 IMG_NAME='Raspbian'
+STAGE_LIST="stage0 stage1 stage2 stage2.1"
