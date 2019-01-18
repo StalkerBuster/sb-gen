@@ -1,7 +1,5 @@
-Index: stage2.1/rootfs/etc/network/interfaces
-===================================================================
---- stage2.1.orig/rootfs/etc/network/interfaces	2019-01-12 03:57:20.313238686 +0100
-+++ stage2.1/rootfs/etc/network/interfaces	2019-01-15 18:26:43.558775829 +0100
+--- a/rootfs/etc/network/interfaces
++++ b/rootfs/etc/network/interfaces
 @@ -3,5 +3,19 @@
  # Please note that this file is written to be used with dhcpcd
  # For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
