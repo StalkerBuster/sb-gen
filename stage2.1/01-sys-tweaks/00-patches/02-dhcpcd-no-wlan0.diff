@@ -1,0 +1,12 @@
+--- a/rootfs/etc/dhcpcd.conf
++++ b/rootfs/etc/dhcpcd.conf
+@@ -4,6 +4,9 @@
+ # Allow users of this group to interact with dhcpcd via the control socket.
+ #controlgroup wheel
+ 
++# do not manage wlan0 (should act as access point)
++denyinterfaces wlan0
++
+ # Inform the DHCP server of our hostname for DDNS.
+ hostname
+ 
