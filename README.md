@@ -19,7 +19,7 @@ earlier releases of these systems.
 To install the required dependencies for pi-gen you should run:
 
 ```bash
-apt-get install quilt parted realpath qemu-user-static debootstrap zerofree pxz zip \
+apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree pxz zip \
 dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl
 ```
 
@@ -109,7 +109,7 @@ IMG_NAME='Raspbian'
 The config file can also be specified on the command line as an argument the `build.sh` or `build-docker.sh` scripts.
 
 ```
-./build -c myconfig
+./build.sh -c myconfig
 ```
 
 This is parsed after `config` so can be used to override values set there.
