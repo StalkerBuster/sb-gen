@@ -1,0 +1,9 @@
+--- a/rootfs/boot/config.txt
++++ b/rootfs/boot/config.txt
+@@ -54,3 +54,6 @@
+ 
+ # Enable audio (loads snd_bcm2835)
+ dtparam=audio=on
++
++# Enable UART
++enable_uart=1

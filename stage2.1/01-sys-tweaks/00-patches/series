@@ -1,2 +1,3 @@
-01-network-interfaces.diff
-02-dhcpcd-no-wlan0.diff
+01-enable-uart.diff
+02-network-interfaces.diff
+03-dhcpcd-no-wlan0.diff
