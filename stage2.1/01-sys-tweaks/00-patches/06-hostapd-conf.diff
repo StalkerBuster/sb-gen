@@ -1,0 +1,35 @@
+--- a/rootfs/etc/default/hostapd
++++ b/rootfs/etc/default/hostapd
+@@ -7,7 +7,7 @@
+ # file and hostapd will be started during system boot. An example configuration
+ # file can be found at /usr/share/doc/hostapd/examples/hostapd.conf.gz
+ #
+-#DAEMON_CONF=""
++DAEMON_CONF="/etc/hostapd/hostapd.conf"
+ 
+ # Additional daemon options to be appended to hostapd command:-
+ # 	-d   show more debug messages (-dd for even more)
+--- /dev/null
++++ b/rootfs/etc/hostapd/hostapd.conf
+@@ -0,0 +1,21 @@
++# Configure for use as WLAN router
++
++# interface and driver
++interface=wlan0
++#driver=nl80211
++
++# wlan configuration
++ssid=stalkerbuster
++channel=1
++hw_mode=g
++ieee80211n=1
++ieee80211d=1
++country_code=DE
++wmm_enabled=1
++
++# wlan encryption
++auth_algs=1
++wpa=2
++wpa_key_mgmt=WPA-PSK
++rsn_pairwise=CCMP
++wpa_passphrase=stalkerbuster

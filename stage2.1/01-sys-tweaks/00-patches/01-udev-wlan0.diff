@@ -1,0 +1,12 @@
+--- /dev/null
++++ b/rootfs/etc/udev/rules.d/70-persistent-net.rules
+@@ -0,0 +1,9 @@
++# Register the raspberrypi3 builtin wifi device as 'wlan0'
++#
++# We identify the device by bustype ('sdio', not 'usb').
++# Stalkerbuster needs a device as wlan0 that supports AP mode (which is the built-in).
++ACTION=="add", SUBSYSTEM=="net", SUBSYSTEMS=="sdio", KERNELS=="mmc1:0001:1", NAME="wlan0"
++ACTION=="add", SUBSYSTEM=="net", SUBSYSTEMS=="usb",  KERNELS=="1-1.2",       NAME="wlan1"
++ACTION=="add", SUBSYSTEM=="net", SUBSYSTEMS=="usb",  KERNELS=="1-1.4",       NAME="wlan1"
++ACTION=="add", SUBSYSTEM=="net", SUBSYSTEMS=="usb",  KERNELS=="1-1.3",       NAME="wlan1"
++ACTION=="add", SUBSYSTEM=="net", SUBSYSTEMS=="usb",  KERNELS=="1-1.5",       NAME="wlan1"
