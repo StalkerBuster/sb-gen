@@ -1,6 +1,7 @@
 01-udev-wlan0.diff
 02-enable-uart.diff
-03-network-interfaces.diff
-04-dhcpcd-no-wlan0.diff
-05-dnsmasq-for-wlan0.diff
-06-hostapd-conf.diff
+03-dhcpd-no-wlan0.diff
+04-dnsmasq-for-wlan0.diff
+05-hostapd-conf.diff
+06-cli-wlan-helpers.diff
+07-network-interfaces.diff
