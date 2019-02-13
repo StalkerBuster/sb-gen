@@ -1,6 +1,6 @@
 --- /dev/null
 +++ b/rootfs/home/pi/activate-wlan.sh
-@@ -0,0 +1,7 @@
+@@ -0,0 +1,8 @@
 +#!/bin/bash
 +# activate a local WLAN
 +#
@@ -8,6 +8,7 @@
 +
 +/usr/bin/wpa_passphrase "$1" "$2" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 +sudo /sbin/wpa_cli reconfigure
++sudo service dnsmasq restart
 --- /dev/null
 +++ b/rootfs/home/pi/list-wlans.sh
 @@ -0,0 +1,5 @@
